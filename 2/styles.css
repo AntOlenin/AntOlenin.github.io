@@ -1,0 +1,111 @@
+.body {
+    background-image: url("./img/background.jpg");
+    padding-top: 80px;
+    font-family: 'Roboto';
+}
+
+.content {
+    margin: 0 auto;
+    width: 330px;
+    background: white;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.5);
+}
+
+.title-block {
+    box-sizing: border-box;
+    padding: 20px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.title {
+    margin: 10px 0;
+}
+
+.preloader {
+    text-align: center;
+    display: inline-block;
+}
+
+.preloader-circle {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    background: #dedede;
+}
+
+.preloader-circle.active {
+    background: #aeaeae;
+}
+
+.item {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #b4b4b4;
+    cursor: pointer;
+    border-top: 1px solid #f1f1f1;
+}
+
+.item:hover {
+    background: #f9f9f9;
+}
+
+.item-left {
+    display: flex;
+    align-items: center;
+    color: #adadad;
+}
+
+.img {
+    width: 36px;
+    height: 36px;
+}
+
+.label {
+    margin-left: 20px;
+}
+
+.item.selected > .item-left {
+    color: #000000
+}
+
+.check {
+    opacity: 0;
+}
+
+.item.selected > .check {
+    opacity: 1;
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+    background: #648bd8;
+    border: 0;
+    border-radius: 0 0px 4px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button img {
+    margin-left: 3px;
+    width: 14px;
+}
