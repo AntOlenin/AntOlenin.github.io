@@ -46,13 +46,15 @@ body {
 
 .chat {
     background: white;
-    padding: 15px;
+    padding: 15px 15px 5px 15px;
 }
 
 .chat__day {
     color: #e8e8e8;
     text-align: center;
     position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 
@@ -62,7 +64,7 @@ body {
     border-bottom: 1px solid #e8e8e8;
     width: 150px;
     position: absolute;
-    top: 10px;
+    top: 8px;
 }
 
 .chat__day::before {
@@ -74,13 +76,103 @@ body {
 }
 
 .chat__item {
-
-}
-
-.chat__item.left {
-
+    font-size: 12px;
+    margin: 10px 0;
 }
 
 .chat__item.right {
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
+
+.chat__item__time {
+    color: #bdbdbd;
+    margin-bottom: 6px;
+}
+
+.chat__item__message {
+    width: 80%;
+    padding: 12px 8px;
+    position: relative;
+}
+
+.chat__item.left > .chat__item__message {
+    background: #e6edf5;
+    border-radius: 0px 4px 4px 4px;
+}
+
+.chat__item.right > .chat__item__message {
+    background: #f2f2f2;
+    border-radius: 4px 0 4px 4px;
+}
+
+.chat__item.right.blocked > .chat__item__message,
+.chat__item.left.blocked > .chat__item__message {
+    background: #fabfc1;
+    border-radius: 4px;
+}
+
+.chat__item.left > .chat__item__message::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -16px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 8px 8px;
+    border-color: transparent #e6edf5 transparent transparent;
+}
+
+.chat__item.right > .chat__item__message::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -16px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent transparent #f2f2f2;
+}
+
+.chat__submit_block {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e8e8e8;
+    height: 50px;
+}
+
+.chat__submit_block__input {
+    height: 100%;
+    margin-right: 10px;
+    width: 80%;
+    border: none;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.chat__submit_block__input:focus {
+    outline: none;
+}
+
+.chat__submit_block__button {
+    height: 100%;
+    width: 20%;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    color: #7195d2;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    padding: 0;
+    cursor: pointer;
+}
+
+.chat__submit_block__button:focus,
+.chat__submit_block__button:active {
+    outline: none;
+}
+
