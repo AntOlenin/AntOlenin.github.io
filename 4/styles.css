@@ -49,30 +49,30 @@ body {
     padding: 15px 15px 5px 15px;
 }
 
-.chat__day {
+.chat__day_block {
+    position: relative;
+    space-around; */
+}
+
+.chat__day_block__line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: none;
+    height: 1px;
+    background: #e8e8e8;
+}
+
+.chat__day_block__day {
+    margin: 0 auto;
     color: #e8e8e8;
+    background:  white;
+    width: 60px;
     text-align: center;
     position: relative;
     font-size: 14px;
+    display: inherit;
     text-transform: uppercase;
-}
-
-
-.chat__day::before,
-.chat__day::after {
-    content: '';
-    border-bottom: 1px solid #e8e8e8;
-    width: 150px;
-    position: absolute;
-    top: 8px;
-}
-
-.chat__day::before {
-    left: 0;
-}
-
-.chat__day::after {
-    right: 0;
 }
 
 .chat__item {
