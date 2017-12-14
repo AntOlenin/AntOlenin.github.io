@@ -1,0 +1,100 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: url('./img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Roboto, sans-serif;
+}
+
+.root {
+    margin: 80px auto;
+    background: white;
+    padding: 60px 35px 35px 35px;
+    width: 300px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 5px 20px 0px #33333378;
+}
+
+.flight_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flight_block__separator {
+    width: 30px;
+    height: 7px;
+    background: #dbe3f0;
+}
+
+.flight_block__side.right {
+    text-align: right;
+}
+
+.flight_block__side__airport {
+    padding: 0;
+    font-size: 50px;
+    line-height: 50px;
+    color: #4e88ce;
+    font-weight: bold;
+    font-family: Prompt, sans-serif;
+    text-transform: uppercase;
+}
+
+.flight_block__side__city {
+    color: #c5c5c5;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.passenger_block {
+    display: flex;
+    margin-top: 40px;
+}
+
+.passenger_block__item {
+    width: 33.3%;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.info:last-child {
+    margin-bottom: 0;
+}
+
+.info__title {
+    color: #c5c6ca;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.info__value {
+    font-size: 14px;
+}
+
+.passenger_data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.passenger_data__left {
+
+}
+
+.passenger_data__right {
+    width: 140px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
