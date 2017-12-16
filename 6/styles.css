@@ -1,0 +1,104 @@
+body {
+    background: #4e505c;
+    font-family: Roboto, sans-serif;
+}
+
+.root {
+    margin: 40px auto;
+    width: 900px;
+    background: white;
+    display: flex;
+}
+
+.left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left__content {
+    padding: 40px;
+}
+
+.left__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ececec;
+    padding: 40px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.left__footer__summary {
+    padding-right: 20px;
+}
+
+.left__footer__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #a09f9f;
+    transition: color 0.15s ease-in-out;
+}
+
+.left__footer__link:hover {
+    color: black;
+}
+
+.right {
+    width: 40%;
+    background-size: cover;
+    background-image: url('./img/side.jpg');
+}
+
+.header {
+    font-size: 36px;
+}
+
+.subheader {
+    color: #C8C8C9;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.buttons_panel {
+    margin: 30px 0;
+}
+
+.button {
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-x: 15px;
+    background-position-y: center;
+    width: 100%;
+    height: 50px;
+    color: #9f9f9f;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    border: 1px solid #ececec;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease-in-out;
+    padding: 0 50px;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:hover {
+    box-shadow: 0 5px 30px 0 #b7b7b7;
+}
+
+.button.googleplus {
+    background-image: url('./img/googleplus.svg');
+}
+
+.button.facebook {
+    background-image: url('./img/facebook.svg');
+}
+
+.button.twitter {
+    background-image: url('./img/twitter.svg');
+}
