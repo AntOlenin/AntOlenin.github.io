@@ -1,0 +1,162 @@
+body {
+    background: #f6ebe9;
+    font-family: Roboto, sans-serif;
+}
+
+.root {
+    margin: 70px auto;
+    background: #ffffff;
+    width: 840px;
+    display: flex;
+    box-shadow: 0px 4px 20px 0 #00000038;
+}
+
+.left {
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    padding: 25px 20px;
+    width: 35%;
+    box-sizing: border-box;
+}
+
+.right {
+    width: 65%;
+    box-sizing: border-box;
+}
+
+.menu {
+    padding: 25px 20px;
+    text-align: right;
+}
+
+.menu__item {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 0.5;
+    transition: opacity 0.15s ease-in-out;
+    margin-right: 25px;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+.menu__item:hover {
+    opacity: 1;
+}
+
+.content {
+    padding: 80px;
+}
+
+.title, .subtitle {
+    font-family: Playfair;
+}
+
+.title {
+    font-size: 60px;
+    line-height: 60px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.subtitle {
+    margin-top: 30px;
+}
+
+.line_wrapper {
+    width: 60px;
+    line-height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.line {
+    width: 100px;
+    height: 4px;
+    line-height: 50px;
+    background: black;
+    display: inline-block;
+}
+
+.article {
+    display: flex;
+    margin-top: 30px;
+}
+
+.video {
+    width: 40%;
+}
+
+.video__preview {
+    height: 100px;
+    background-image: url('./img/preview.jpg');
+    background-size: cover;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video__preview_play {
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    position: relative;
+    opacity: 0.4;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.video__preview_play:hover {
+    opacity: 0.7;
+}
+
+.video__preview_play::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('./img/play.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.description {
+    width: 60%;
+    padding-left: 40px;
+    line-height: 24px;
+}
+
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 0.5;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.back_button__icon {
+    width: 12px;
+    margin-right: 5px;
+}
+
+.forward_button__icon {
+    width: 12px;
+    margin-left: 5px;
+}
