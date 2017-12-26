@@ -1,0 +1,19 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.links__item {
+    list-style: none;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.links__item a {
+    color: gray;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+}
+
+.links__item a:hover {
+    color: black;
+}
