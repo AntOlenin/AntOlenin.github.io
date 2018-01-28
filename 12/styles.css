@@ -1,0 +1,131 @@
+
+body {
+    background: #2f2f2f;
+    font-family: Roboto, sans-serif;
+}
+
+.root {
+    width: 400px;
+    background: #fdec51;
+    margin: 100px auto;
+    padding: 40px 40px 140px 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+    background: #ffffff;
+    position: relative;
+    top: 80px;
+    /* left: 50px; */
+    padding: 40px;
+    box-shadow: 0px 5px 20px 0px #00000075;
+}
+
+.textarea {
+    width: 100%;
+    resize: vertical;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    min-height: 80px;
+}
+
+.title_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+
+}
+
+.close {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.close:hover {
+    opacity: 0.9;
+}
+
+.close:before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background: black;
+    right: 40px;
+    transform: rotate(45deg);
+}
+
+.close:after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    right: 40px;
+    background: black;
+    transform: rotate(-45deg);
+}
+
+.avatar {
+    position: absolute;
+    top: -35px;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+.action_bar {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+.button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.field_group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.field {
+    width: 100%;
+}
+
+.field__title {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #bdc1c7;
+    margin-bottom: 10px;
+}
+
+.field__input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    line-height: 22px;
+}
+
+.field__input:focus {
+    outline: none;
+}
